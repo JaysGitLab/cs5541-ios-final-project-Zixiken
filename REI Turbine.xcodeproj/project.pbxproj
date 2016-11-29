@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		70B882B01DEDCAB6008E3006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B882AF1DEDCAB6008E3006 /* AppDelegate.swift */; };
-		70B882B21DEDCAB6008E3006 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B882B11DEDCAB6008E3006 /* ViewController.swift */; };
 		70B882B51DEDCAB6008E3006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70B882B31DEDCAB6008E3006 /* Main.storyboard */; };
 		70B882B71DEDCAB6008E3006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70B882B61DEDCAB6008E3006 /* Assets.xcassets */; };
 		70B882BA1DEDCAB6008E3006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70B882B81DEDCAB6008E3006 /* LaunchScreen.storyboard */; };
+		70B882C61DEDD62E008E3006 /* CurrentDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B882C51DEDD62E008E3006 /* CurrentDataViewController.swift */; };
+		70B882C81DEDD73B008E3006 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B882C71DEDD73B008E3006 /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		70B882AC1DEDCAB6008E3006 /* REI Turbine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "REI Turbine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B882AF1DEDCAB6008E3006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		70B882B11DEDCAB6008E3006 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		70B882B41DEDCAB6008E3006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70B882B61DEDCAB6008E3006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70B882B91DEDCAB6008E3006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70B882BB1DEDCAB6008E3006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70B882C51DEDD62E008E3006 /* CurrentDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentDataViewController.swift; sourceTree = "<group>"; };
+		70B882C71DEDD73B008E3006 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				70B882AF1DEDCAB6008E3006 /* AppDelegate.swift */,
-				70B882B11DEDCAB6008E3006 /* ViewController.swift */,
 				70B882B31DEDCAB6008E3006 /* Main.storyboard */,
 				70B882B61DEDCAB6008E3006 /* Assets.xcassets */,
 				70B882B81DEDCAB6008E3006 /* LaunchScreen.storyboard */,
 				70B882BB1DEDCAB6008E3006 /* Info.plist */,
+				70B882C51DEDD62E008E3006 /* CurrentDataViewController.swift */,
+				70B882C71DEDD73B008E3006 /* DataSource.swift */,
 			);
 			path = "REI Turbine";
 			sourceTree = "<group>";
@@ -136,7 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70B882B21DEDCAB6008E3006 /* ViewController.swift in Sources */,
+				70B882C81DEDD73B008E3006 /* DataSource.swift in Sources */,
+				70B882C61DEDD62E008E3006 /* CurrentDataViewController.swift in Sources */,
 				70B882B01DEDCAB6008E3006 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,26 +1,118 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="r6X-Yq-gI4">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--History-->
+        <scene sceneID="Igp-kg-RXz">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mcS-nd-fiq" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="UDU-3Y-HNa"/>
+                        <viewControllerLayoutGuide type="bottom" id="qfI-5D-LSH"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="WPK-sy-2jc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="History" id="0C6-yy-Jm0"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7hf-Yq-Wz1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="540" y="560"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="iqZ-1V-GLN">
+            <objects>
+                <tabBarController id="r6X-Yq-gI4" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="fcR-q2-eFF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MBM-M9-Sva" kind="relationship" relationship="viewControllers" id="QHR-iQ-Lk7"/>
+                        <segue destination="mcS-nd-fiq" kind="relationship" relationship="viewControllers" id="SZD-HL-4a2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqh-zS-Chb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-412" y="233"/>
+        </scene>
+        <!--Current Data-->
+        <scene sceneID="F52-bt-YMq">
+            <objects>
+                <viewController id="MBM-M9-Sva" customClass="CurrentDataViewController" customModule="REI_Turbine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wb9-yt-w7p"/>
+                        <viewControllerLayoutGuide type="bottom" id="lb2-6F-65h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="67Y-ok-78m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0n-EB-7Gf">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power generation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8Y-91-s5O">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind bearing:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pG-94-R9t">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gly-9a-Ivd">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2h-gU-9m3">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uor-aW-NfI">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uor-aW-NfI" firstAttribute="baseline" secondItem="5pG-94-R9t" secondAttribute="baseline" id="0Vu-xU-j91"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="P0n-EB-7Gf" secondAttribute="leading" id="518-qy-Yg0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j2h-gU-9m3" secondAttribute="trailing" id="DXG-UD-9VQ"/>
+                            <constraint firstItem="j8Y-91-s5O" firstAttribute="top" secondItem="P0n-EB-7Gf" secondAttribute="bottom" constant="8" id="Mb9-2J-Hew"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="j8Y-91-s5O" secondAttribute="leading" id="QSS-29-Shw"/>
+                            <constraint firstItem="P0n-EB-7Gf" firstAttribute="top" secondItem="wb9-yt-w7p" secondAttribute="bottom" constant="8" id="TXC-ew-mD1"/>
+                            <constraint firstItem="5pG-94-R9t" firstAttribute="top" secondItem="j8Y-91-s5O" secondAttribute="bottom" constant="8" id="UbQ-i0-45v"/>
+                            <constraint firstItem="j2h-gU-9m3" firstAttribute="baseline" secondItem="j8Y-91-s5O" secondAttribute="baseline" id="ZoA-ol-dYS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gly-9a-Ivd" secondAttribute="trailing" id="bNw-57-CQA"/>
+                            <constraint firstItem="Gly-9a-Ivd" firstAttribute="baseline" secondItem="P0n-EB-7Gf" secondAttribute="baseline" id="d84-T0-mtl"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="5pG-94-R9t" secondAttribute="leading" id="n7G-eN-7WW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uor-aW-NfI" secondAttribute="trailing" id="wDn-fZ-Iu4"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Current Data" id="gWG-pX-BFq"/>
+                    <connections>
+                        <outlet property="powerLabel" destination="j2h-gU-9m3" id="E2D-Ip-73e"/>
+                        <outlet property="rotationLabel" destination="Gly-9a-Ivd" id="8Pm-IC-CI3"/>
+                        <outlet property="windLabel" destination="uor-aW-NfI" id="Fz2-VV-5Q4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f7k-Zl-alJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="540" y="-108"/>
         </scene>
     </scenes>
 </document>
