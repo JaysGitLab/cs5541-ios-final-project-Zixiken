@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70071E471DF881F6002CCBAC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70071E461DF881F6002CCBAC /* HistoryViewController.swift */; };
+		70071E491DF8885D002CCBAC /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70071E481DF8885D002CCBAC /* HistoryCell.swift */; };
 		70B882B01DEDCAB6008E3006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B882AF1DEDCAB6008E3006 /* AppDelegate.swift */; };
 		70B882B51DEDCAB6008E3006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70B882B31DEDCAB6008E3006 /* Main.storyboard */; };
 		70B882B71DEDCAB6008E3006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70B882B61DEDCAB6008E3006 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70071E461DF881F6002CCBAC /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		70071E481DF8885D002CCBAC /* HistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		70B882AC1DEDCAB6008E3006 /* REI Turbine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "REI Turbine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B882AF1DEDCAB6008E3006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70B882B41DEDCAB6008E3006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				70B882BB1DEDCAB6008E3006 /* Info.plist */,
 				70B882C51DEDD62E008E3006 /* CurrentDataViewController.swift */,
 				70B882C71DEDD73B008E3006 /* DataSource.swift */,
+				70071E461DF881F6002CCBAC /* HistoryViewController.swift */,
+				70071E481DF8885D002CCBAC /* HistoryCell.swift */,
 			);
 			path = "REI Turbine";
 			sourceTree = "<group>";
@@ -142,6 +148,8 @@
 				70B882C81DEDD73B008E3006 /* DataSource.swift in Sources */,
 				70B882C61DEDD62E008E3006 /* CurrentDataViewController.swift in Sources */,
 				70B882B01DEDCAB6008E3006 /* AppDelegate.swift in Sources */,
+				70071E471DF881F6002CCBAC /* HistoryViewController.swift in Sources */,
+				70071E491DF8885D002CCBAC /* HistoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +311,7 @@
 				70B882C01DEDCAB6008E3006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
